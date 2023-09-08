@@ -54,6 +54,13 @@ p{
     and (max-device-width: 480px) 
     and (min-device-width: 320px) {
 
+
+    main {
+        display: flex;
+        text-align: start;
+        align-items: center;
+    }
+
     h1 {
         font-size: 4.2rem; 
     }
