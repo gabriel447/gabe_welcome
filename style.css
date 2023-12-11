@@ -22,19 +22,6 @@ body {
     font-family: "DM sans", sans-serif;
 }
 
-body, button, input {
-    font-family: "DM sans", sans-serif;
-}
-
-button {
-    background-color: #7879F1;
-    color: white;
-    font-weight: bold;
-    border-radius: 0 .4rem .4rem 0;
-    cursor: pointer;
-
-    transition: background .3s;
-}
 
 h1{
     color: white;
@@ -48,6 +35,23 @@ h4{
 p{
     color: #F0FFFF;
     font-size: 1.2rem;
+}
+
+.icons a {
+    padding-right: 10px;
+}
+
+.sobre img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.sobre {
+    display: flex;
+    max-width: 500PX;
+    align-items: center;
+    padding: 20px 0 20px 0px;
 }
 
 @media only screen
