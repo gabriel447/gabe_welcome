@@ -17,7 +17,7 @@ body {
 
     display: grid;
     place-items: center;
-    height: 300vh;
+    height: 350vh;
 
     font-family: "DM sans", sans-serif;
 }
@@ -37,8 +37,8 @@ p{
     font-size: 1.2rem;
 }
 
-.icons a {
-    padding-right: 10px;
+.icons, a {
+    padding-right: 20px;
 }
 
 .sobre img {
@@ -47,12 +47,24 @@ p{
     border-radius: 50%;
 }
 
+.sobre, p {
+    font-size: 1.6rem;
+}
+
 .sobre {
     display: flex;
-    max-width: 500PX;
+    max-width: 550PX;
     align-items: center;
     padding: 20px 0 20px 0px;
 }
+
+.btn {
+    padding: 15px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+
 
 @media only screen
     and (max-device-width: 480px) 
