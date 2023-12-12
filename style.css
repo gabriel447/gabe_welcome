@@ -17,7 +17,7 @@ body {
 
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: 300vh;
 
     font-family: "DM sans", sans-serif;
 }
