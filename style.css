@@ -11,13 +11,14 @@
 }
 
 body {
+    zoom: 108%;
     background: rgb(63,81,177);
     background: radial-gradient(circle, rgba(63,81,177,1) 0%, rgba(101,60,184,0.9864320728291317) 100%);
     font-size: 3.6rem;
 
     display: grid;
     place-items: center;
-    height: 220vh;
+    height: 160vh;
 
     font-family: "DM sans", sans-serif;
 }
