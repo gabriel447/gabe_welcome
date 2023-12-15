@@ -17,9 +17,10 @@ body {
 
     display: grid;
     place-items: center;
-    height: 160vh;
+    height: 140vh;
 
     font-family: "DM sans", sans-serif;
+    zoom: 140%;
 }
 
 
@@ -30,77 +31,67 @@ h1{
 h4{
     font-size: 2.2rem;
     font-weight: bold; 
+    color: white;
+    padding: 80px 0px 20px 0px;
 }
 
-.first > p{
+button {
+    padding: 15px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.iam > p {
     color: #F0FFFF;
     font-size: 1.4rem;
 }
 
-.tech > a {
-    padding-right: 15px;
+.sobremim > p {
+    color: #F0FFFF;
+    font-size: 1.4rem;
+    padding-left: 20px;
 }
 
-.sobre > img {
+.tech-icons > a {
+    margin: 0px 20px 0px 0px;
+}
+
+.cv {
+    padding: 60px 0px 0px 0px; 
+    display: flex; 
+    /* justify-content: center; */
+}
+
+.sobremim > img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
 }
 
-.sobre {
+.sobremim {
     display: flex;
     max-width: 600px;
     align-items: center;
-    padding: 20px 0 20px 0px;
+    padding: 80px 0 20px 0px;
 }
 
-.sobre > p {
-    color: #F0FFFF;
-    font-size: 1.6rem;
+.social-icons {
+    margin: 20px 0px 0px 0px;
 }
 
-.btn {
-    padding: 15px;
-    border-radius: 5%;
-    cursor: pointer;
+.social-icons a {
+    text-decoration: none;
 }
 
-.icons > a {
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-
-#ticon, #ricon {
+#ticon {
     width: 100px;
     height: 100px;
 }
 
+#sicon {
+    width: 50px;
+}
+
 @media (max-width: 600px) {
-    body {
-        text-align: center;
-        font-size: 1.6rem;
-        height: 100vh;
-        weight: 50vh;
-    }
-
-    .sobre {
-        margin: 20px;
-    }
-
-    .first {
-        flex-direction: column;
-        padding-top: 40px;
-    }
-
-    .icons {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    #ticon, #ricon {
-        width: 50px;
-        height: 50px;
-    }
+    
  }
