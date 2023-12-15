@@ -74,6 +74,8 @@ h4{
     body {
         text-align: center;
         font-size: 1.6rem;
+        height: 100vh;
+        weight: 50vh;
     }
 
     .sobre {
