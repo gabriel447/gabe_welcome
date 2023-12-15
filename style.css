@@ -96,6 +96,7 @@ button {
     body {
         font-size: 1.4rem;
         margin: 20px;
+        zoom: 120%;
     }
 
     h4 {
@@ -107,12 +108,18 @@ button {
     }
 
     #ticon {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
     }
 
     .tech-icons > a {
-        margin: 20px;
+        margin-bottom: 10px;
+    }
+
+    .tech-icons {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .sobremim {
