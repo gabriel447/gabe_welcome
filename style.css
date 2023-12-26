@@ -9,9 +9,7 @@
 body {
     font-size: 3.6rem;
 
-    /* display: grid; */
-    place-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     font-family: "DM sans", sans-serif;
     zoom: 110%;
 }
@@ -49,11 +47,7 @@ button {
     text-align: left;
 }
 
-.iam {
-    
-}
-
-.descp {
+.desc-p {
     color: #F0FFFF;
     font-size: 1.4rem;
 }
@@ -81,25 +75,27 @@ button {
 }
 
 .secondary {
-    /*  */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .sobremim {
     display: flex;
-    max-width: 600px;
+    max-width: 750px;
     align-items: center;
-    padding: 180px 0 120px 0px;
+    padding-bottom: 200px;
 }
 
 .sobremim>p {
     /* color: #F0FFFF; */
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding-left: 20px;
 }
 
 .sobremim>img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
@@ -113,8 +109,8 @@ button {
 }
 
 #ticon {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 @media (max-width: 600px) {
