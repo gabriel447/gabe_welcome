@@ -129,7 +129,7 @@ button {
     .tech-icons {
         display: flex;
         flex-direction: column;
-        padding: 20px 0px 80px 0px;
+        padding: 20px 0px 60px 0px;
     }
 
     .tech-icons > a {
