@@ -140,7 +140,7 @@ button {
     }
 
     .secondary {
-        margin: 40px;
+        margin: 60px;
     }
 
     .tech-icons>a {
@@ -151,6 +151,7 @@ button {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        padding-bottom: 40px;
     }
 
     .sobremim {
