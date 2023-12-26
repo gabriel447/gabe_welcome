@@ -6,32 +6,24 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-:root {
-    font-size: 62.5%;
-}
-
 body {
-    background: rgb(63, 81, 177);
-    background: radial-gradient(circle, rgba(63, 81, 177, 1) 0%, rgba(101, 60, 184, 0.9864320728291317) 100%);
     font-size: 3.6rem;
 
-    display: grid;
+    /* display: grid; */
     place-items: center;
     height: 100vh;
-
     font-family: "DM sans", sans-serif;
-    zoom: 140%;
+    zoom: 110%;
 }
-
 
 h1 {
     color: white;
+    margin-bottom: 20px;
 }
 
 h4 {
     font-size: 2.2rem;
     font-weight: bold;
-    color: white;
     padding: 80px 0px 20px 0px;
 }
 
@@ -41,46 +33,79 @@ button {
     cursor: pointer;
 }
 
-.iam > p {
+:root {
+    font-size: 62.5%;
+}
+
+.main {
+    background: #5000ca;
+    /* background: radial-gradient(circle, rgba(63, 81, 177, 1) 0%, rgba(101, 60, 184, 0.9864320728291317) 100%); */
+    /* background-repeat: repeat; */
+
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.iam {
+    
+}
+
+.descp {
     color: #F0FFFF;
     font-size: 1.4rem;
 }
 
-.sobremim > p {
-    color: #F0FFFF;
-    font-size: 1.4rem;
-    padding-left: 20px;
+.social-icons {
+    margin: 40px 0px 0px 0px;
 }
 
-.tech-icons > a {
-    margin: 0px 20px 0px 0px;
+.social-icons a {
+    text-decoration: none;
 }
 
 .cv {
-    padding: 60px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
-.sobremim > img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+/* parte principal é até aqui */
+
+.wave {
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.secondary {
+    /*  */
 }
 
 .sobremim {
     display: flex;
     max-width: 600px;
     align-items: center;
-    padding: 180px 0 140px 0px;
+    padding: 180px 0 120px 0px;
 }
 
-.social-icons {
-    margin: 20px 0px 0px 0px;
+.sobremim>p {
+    /* color: #F0FFFF; */
+    font-size: 1.4rem;
+    padding-left: 20px;
 }
 
-.social-icons a {
-    text-decoration: none;
+.sobremim>img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+
+.tech-icons>a {
+    margin: 0px 20px 0px 0px;
 }
 
 #sicon {
@@ -95,7 +120,6 @@ button {
 @media (max-width: 600px) {
     body {
         font-size: 1.4rem;
-        margin: 20px;
         zoom: 120%;
     }
 
@@ -112,7 +136,18 @@ button {
         height: 90px;
     }
 
-    .tech-icons > a {
+    .main {
+        background-repeat: repeat;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .secondary {
+        margin: 40px;
+    }
+
+    .tech-icons>a {
         margin-bottom: 10px;
     }
 
@@ -123,7 +158,7 @@ button {
     }
 
     .sobremim {
-        font-size: 1.4rem; 
+        font-size: 1.4rem;
         display: flex;
         flex-direction: column;
     }
@@ -133,7 +168,7 @@ button {
         justify-content: center;
     }
 
-    .sobremim > img {
+    .sobremim>img {
         margin: 40px;
     }
 }
