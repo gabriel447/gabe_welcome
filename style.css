@@ -112,14 +112,12 @@ button {
         align-items: start;
         margin-left: 5px;
     }
-    
 
     .desc-p {
         font-size: 0.8rem;
         max-width: 300px;
         margin-left: 2px;
     }
-
 
     .sobremim {
         display: flex;
