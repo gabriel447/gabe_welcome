@@ -72,14 +72,14 @@ button {
 
 .sobremim {
     display: flex;
-    max-width: 750px;
+    max-width: 900px;
     align-items: center;
     padding-bottom: 200px;
 }
 
 .sobremim>p {
     font-size: 1.5rem;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .sobremim>img {
