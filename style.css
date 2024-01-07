@@ -88,6 +88,9 @@ button {
     border-radius: 50%;
 }
 
+.tech-icons {
+    margin: 0px 0px 80px 0px;
+}
 
 .tech-icons>a {
     margin: 0px 20px 0px 0px;
@@ -117,13 +120,17 @@ button {
     .sobremim {
         display: flex;
         flex-direction: column;
-        margin: 40px;
-        height: 1000px;
+        padding: 0;
+        margin: 120px 0px 120px 0px
     }
 
     .sobremim > p {
-        max-width: 300px;
-        margin-top: 20px;
+        display: flex;
+        text-align: center;
+        margin: 60px;
+        justify-content: center;
+        max-width: 500px;
+        padding: 0;
     }
 
     .tech-icons {
