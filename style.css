@@ -72,9 +72,9 @@ button {
 
 .sobremim {
     display: flex;
-    max-width: 900px;
+    max-width: 800px;
     align-items: center;
-    padding-bottom: 200px;
+    margin: 40px;
 }
 
 .sobremim>p {
@@ -89,7 +89,7 @@ button {
 }
 
 .tech-icons {
-    margin: 0px 0px 80px 0px;
+    margin: 40px;
 }
 
 .tech-icons>a {
@@ -107,50 +107,45 @@ button {
 
 @media (max-width: 600px) {
 
-    h1 {
-        font-size: 3.2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-items: start;
-        margin-left: 5px;
+    .iam {
+        font-size: 1.6rem;
+        text-align: center;
     }
 
-    .desc-p {
-        font-size: 0.8rem;
-        max-width: 300px;
-        margin-left: 2px;
+    .desc-p{
+        font-size: 1.0rem;
     }
 
+   
     .sobremim {
         display: flex;
         flex-direction: column;
-        margin: 40px;
-        height: 1000px;
+        padding: 0px;
+        margin: 120px 0px 0px 0px;
     }
 
     .sobremim > p {
-        max-width: 300px;
-        margin-top: 20px;
+        display: flex;
+        text-align: center;
+        padding: 0;
+        margin: 40px;
+        justify-content: center;
+        max-width: 500px;
     }
 
     .tech-icons {
         display: flex;
         flex-direction: column;
-        padding: 100px 0px 100px 0px;
+        padding: 20px 0px 60px 0px;
     }
 
-    .tech-icons>a {
+    .tech-icons > a {
         margin: 10px;
     }
 
     #ticon {
-        width: 70px;
-        height: 70px;
-    }
-
-    .secondary {
-        margin-top: 80px;
+        width: 100px;
+        height: 100px;
     }
 
 }
