@@ -9,7 +9,7 @@
 body {
     font-size: 3.6rem;
     font-family: "DM sans", sans-serif;
-    zoom: 110%;
+    zoom: 100%;
 }
 
 h1 {
@@ -144,8 +144,8 @@ button {
     }
 
     #ticon {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
 }
