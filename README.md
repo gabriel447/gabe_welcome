@@ -2,4 +2,4 @@
 currículo web
 
 link:
-https://gabriel447.github.io/gabee_welcome/
+https://gabriel447.github.io/gabe_welcome/
