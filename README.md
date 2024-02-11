@@ -2,4 +2,4 @@
 currículo web com meus portfólios
 
 link da web:
-https://gabriel447.github.io/gabee_page_web/
+https://gabriel447.github.io/gabee_welcome/
