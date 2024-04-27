@@ -27,12 +27,6 @@ h4 {
     margin-bottom: 40px;
 }
 
-button {
-    padding: 15px;
-    border-radius: 10%;
-    cursor: pointer;
-}
-
 :root {
     font-size: 62.5%;
 }
