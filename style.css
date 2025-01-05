@@ -62,10 +62,18 @@ h4 {
     text-decoration: none;
 }
 
+.social-icons #sicon, path{
+    cursor: pointer;
+}
+
 .cv {
     padding: 40px 0px 0px 0px;
     display: flex;
     justify-content: center;
+}
+
+.cv button {
+    cursor: pointer;
 }
 
 .secondary {
@@ -92,14 +100,6 @@ h4 {
     border-radius: 50%;
 }
 
-.tech-icons {
-    margin: 40px;
-}
-
-.tech-icons>a {
-    margin: auto;
-}
-
 #sicon {
     width: 50px;
 }
@@ -107,6 +107,18 @@ h4 {
 #ticon {
     width: 150px;
     height: 150px;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -152,11 +164,6 @@ h4 {
     .tech-icons {
         display: flex;
         flex-direction: column;
-        padding: 20px 0px 60px 0px;
-    }
-
-    .tech-icons > a {
-        margin: auto;
     }
 
     #ticon {
@@ -164,4 +171,8 @@ h4 {
         height: 80px;
     }
 
+    .swiper {
+        width: 400px;
+        height: 400px;
+    }
 }
