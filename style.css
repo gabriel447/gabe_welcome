@@ -40,6 +40,7 @@ h4 {
 .main {
     background: #5000ca;
     padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,6 +52,10 @@ h4 {
     font-size: 1.4rem;
     padding-top: 40px;
     text-align: center;
+}
+
+.desc-p > p {
+    margin: 0 40px 0 40px;
 }
 
 .social-icons {
@@ -87,7 +92,7 @@ path {
 }
 
 .sobremim>p {
-    padding: 20px 40px 0 40px;
+    padding: 20px 40px 0px 40px;
     color: white;
     font-size: 1.7rem;
     max-width: 500px;
@@ -230,6 +235,6 @@ path {
     }
 
     .projects {
-        margin-top: 40px;
+        margin-top: 80px;
     }
 }
