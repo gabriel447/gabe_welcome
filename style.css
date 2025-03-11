@@ -103,6 +103,7 @@ path {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    border: 5px solid white; /* Added white border */
 }
 
 .habilidades {
@@ -143,7 +144,7 @@ path {
 .wave-bottom {
     display: block; 
     line-height: 0; 
-    margin-bottom: -1px;
+    margin-bottom: -2px;
 }
 
 .projects {
@@ -175,8 +176,31 @@ path {
     border-radius: 5%;
 }
 
+/* Animation for circles */
+.circle {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 @media (max-width: 600px) {
+
+    .circle {
+        display: none;
+    }
 
     h4 {
         font-size: 2.6rem;
