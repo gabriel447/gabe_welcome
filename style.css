@@ -163,9 +163,12 @@ path {
 
 .slide {
     width: 150px;
-    height: 150px;
-    gap: 60px;
+    height: 100px;
+    gap: 20px;
+}
 
+.slider {
+    margin-bottom: 40px;
 }
 
 @media (max-width: 600px) {
