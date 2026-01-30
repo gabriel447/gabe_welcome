@@ -55,16 +55,92 @@
     </div>
 
     <div class="projects">
-        <h4>Último Projeto</h4>
+        <h4>Meus Projetos</h4>
         <br>
         <div class="carousel-container">
-            <div class="carousel-slide">
-                <a href="https://github.com/gabriel447/filmemisterioso.git" target="_blank">
-                    <img src="filmemisterioso.png" alt="">
-                </a>
-            </div>
+            <button class="carousel-btn prev-btn" onclick="mudarProjeto(-1)">&#10094;</button>
+            
+            <div class="project-content">
+            <a id="project-link" href="https://github.com/gabriel447/filmemisterioso.git" target="_blank">
+                <img id="project-img" src="src/filmemisterioso.png" alt="Projeto">
+            </a>
+            <h5 id="project-title">Filme Misterioso</h5>
         </div>
+
+        <button class="carousel-btn next-btn" onclick="mudarProjeto(1)">&#10095;</button>
     </div>
+</div>
+
+<script>
+    const projetos = [
+        {
+            titulo: "Filme Misterioso",
+            img: "src/filmemisterioso.png",
+            link: "https://github.com/gabriel447/filmemisterioso"
+        },
+        {
+            titulo: "Flashcards Inteligentes",
+            img: "src/flashcards.png",
+            link: "https://github.com/gabriel447/flashcards-inteligentes"
+        },
+        {
+            titulo: "Planejador de Tarefas",
+            img: "src/planejador.png",
+            link: "https://github.com/gabriel447/planejador-de-tarefas"
+        },
+        {
+            titulo: "Locadora V2",
+            img: "src/locadora.png",
+            link: "https://github.com/gabriel447/locadora-v2"
+        },
+        {
+            titulo: "Assistencia Técnica V2",
+            img: "src/assistencia.png",
+            link: "https://github.com/gabriel447/assistencia-tecnica-v2"
+        },
+        {
+            titulo: "SnapTrade",
+            img: "src/snaptrade.png",
+            link: "https://github.com/gabriel447/snaptrade"
+        }
+    ];
+
+    let projetoAtual = 0;
+
+    const imgElement = document.getElementById('project-img');
+    const titleElement = document.getElementById('project-title');
+    const linkElement = document.getElementById('project-link');
+
+    function mudarProjeto(direcao) {
+        projetoAtual += direcao;
+
+        if (projetoAtual < 0) {
+            projetoAtual = projetos.length - 1;
+        } else if (projetoAtual >= projetos.length) {
+            projetoAtual = 0;
+        }
+
+        atualizarCarrossel();
+    }
+
+    function atualizarCarrossel() {
+        const projeto = projetos[projetoAtual];
+        
+        // Adiciona classe de fade-out
+        imgElement.style.opacity = 0;
+        titleElement.style.opacity = 0;
+
+        setTimeout(() => {
+            imgElement.src = projeto.img;
+            titleElement.textContent = projeto.titulo;
+            linkElement.href = projeto.link;
+            
+            // Remove fade-out e adiciona fade-in
+            imgElement.style.opacity = 1;
+            titleElement.style.opacity = 1;
+        }, 300);
+    }
+</script>
 
     <div class="wave-bottom">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
