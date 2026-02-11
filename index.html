@@ -57,90 +57,74 @@
     <div class="projects">
         <h4>Meus Projetos</h4>
         <br>
-        <div class="carousel-container">
-            <button class="carousel-btn prev-btn" onclick="mudarProjeto(-1)">&#10094;</button>
-            
-            <div class="project-content">
-            <a id="project-link" href="https://github.com/gabriel447/filmemisterioso.git" target="_blank">
-                <img id="project-img" src="src/filmemisterioso.png" alt="Projeto">
-            </a>
-            <h5 id="project-title">Filme Misterioso</h5>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">
+                    <img src="src/github.svg" alt="Ícone do Projeto">
+                </div>
+                <div class="project-info">
+                    <h5>Filme Misterioso</h5>
+                    <p>Aplicação interativa para descobrir e explorar filmes aleatórios com base em preferências.</p>
+                    <a href="https://github.com/gabriel447/filmemisterioso" target="_blank" class="project-link">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <img src="src/github.svg" alt="Ícone do Projeto">
+                </div>
+                <div class="project-info">
+                    <h5>Flashcards Inteligentes</h5>
+                    <p>Sistema de flashcards para otimizar estudos e memorização de conteúdo.</p>
+                    <a href="https://github.com/gabriel447/flashcards" target="_blank" class="project-link">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <img src="src/github.svg" alt="Ícone do Projeto">
+                </div>
+                <div class="project-info">
+                    <h5>Planejador de Tarefas</h5>
+                    <p>Ferramenta para organização pessoal e gerenciamento de tarefas diárias.</p>
+                    <a href="https://github.com/gabriel447/PLADIM" target="_blank" class="project-link">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <img src="src/github.svg" alt="Ícone do Projeto">
+                </div>
+                <div class="project-info">
+                    <h5>Locadora CRM</h5>
+                    <p>Sistema completo de gestão para locadoras de veículos ou equipamentos.</p>
+                    <a href="https://github.com/gabriel447/locadorav2" target="_blank" class="project-link">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <img src="src/github.svg" alt="Ícone do Projeto">
+                </div>
+                <div class="project-info">
+                    <h5>Assistencia Técnica CRM</h5>
+                    <p>Plataforma para gerenciamento de ordens de serviço e clientes de assistência técnica.</p>
+                    <a href="https://github.com/gabriel447/assistenciaV2" target="_blank" class="project-link">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <img src="src/github.svg" alt="Ícone do Projeto">
+                </div>
+                <div class="project-info">
+                    <h5>SnapTrade</h5>
+                    <p>Aplicação voltada para operações de trade e análise de mercado financeiro.</p>
+                    <a href="https://github.com/gabriel447/snaptrade" target="_blank" class="project-link">Ver Projeto</a>
+                </div>
+            </div>
         </div>
-
-        <button class="carousel-btn next-btn" onclick="mudarProjeto(1)">&#10095;</button>
     </div>
-</div>
-
-<script>
-    const projetos = [
-        {
-            titulo: "Filme Misterioso",
-            img: "src/filmemisterioso.png",
-            link: "https://github.com/gabriel447/filmemisterioso"
-        },
-        {
-            titulo: "Flashcards Inteligentes",
-            img: "src/flashcards.png",
-            link: "https://github.com/gabriel447/flashcards-inteligentes"
-        },
-        {
-            titulo: "Planejador de Tarefas",
-            img: "src/planejador.png",
-            link: "https://github.com/gabriel447/planejador-de-tarefas"
-        },
-        {
-            titulo: "Locadora V2",
-            img: "src/locadora.png",
-            link: "https://github.com/gabriel447/locadora-v2"
-        },
-        {
-            titulo: "Assistencia Técnica V2",
-            img: "src/assistencia.png",
-            link: "https://github.com/gabriel447/assistencia-tecnica-v2"
-        },
-        {
-            titulo: "SnapTrade",
-            img: "src/snaptrade.png",
-            link: "https://github.com/gabriel447/snaptrade"
-        }
-    ];
-
-    let projetoAtual = 0;
-
-    const imgElement = document.getElementById('project-img');
-    const titleElement = document.getElementById('project-title');
-    const linkElement = document.getElementById('project-link');
-
-    function mudarProjeto(direcao) {
-        projetoAtual += direcao;
-
-        if (projetoAtual < 0) {
-            projetoAtual = projetos.length - 1;
-        } else if (projetoAtual >= projetos.length) {
-            projetoAtual = 0;
-        }
-
-        atualizarCarrossel();
-    }
-
-    function atualizarCarrossel() {
-        const projeto = projetos[projetoAtual];
-        
-        // Adiciona classe de fade-out
-        imgElement.style.opacity = 0;
-        titleElement.style.opacity = 0;
-
-        setTimeout(() => {
-            imgElement.src = projeto.img;
-            titleElement.textContent = projeto.titulo;
-            linkElement.href = projeto.link;
-            
-            // Remove fade-out e adiciona fade-in
-            imgElement.style.opacity = 1;
-            titleElement.style.opacity = 1;
-        }, 300);
-    }
-</script>
 
     <div class="wave-bottom">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
